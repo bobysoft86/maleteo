@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="../../../assets/pexels-koolshooters-6976368 (2160p).mp4" type="video/mp4"> 
+        Your browser does not support the video tag.
+    </video>
+
+
+  <div class="container">
+      <div class="section1" *ngIf="!showModal && !showModal2">
+          <section>
+              <div class="logoContainer">
+                  <img class= "logo" src="../../../assets/maleta.png" alt="logo">
+              </div>
+              <div>
+                  <h1 class="nombre">MALETEO</h1>
+              </div>
+          </section>
+      </div>
+
+      <div class="section2">
+
+          <div class="modal" *ngIf="showModal">
+              <div class="modal-content">
+                  <img class="modalImg" src="../../../assets/cadena.png" alt="">
+
+                  <div class="textoLanding">   <h2>Prepárate para <br>liberarte de tu equipaje</h2>
+                    <p>Encuentra a tu guardián y disfruta <br>a tu manera. Miles de usuarios ya <br>están aprovechando las ventajas.</p></div>
+
+                  <button class="btn" (click)="closeModal('showModal')">Continuar</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="section3">
+
+          <div class="modal" *ngIf="showModal2">
+              <div  class="modal-content">
+                  <img class="modalImg" src="../../../assets/tierra.png" alt="">
+                  <h2 class="textoLanding">El mismo precio <br>en cualquier parte</h2>
+                  <p>Dispondrás de un precio fijo estés <br>donde estés sin importar el tamaño <br> o el peso.</p>
+                  <button class="btn" routerLink="/registro">Empezar ya</button><br>
+                  <a  class="prices" routerLink="/home">Consulta de precios</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  </body>
+</html>

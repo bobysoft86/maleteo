@@ -1,0 +1,42 @@
+
+<div class="container">
+  <div>
+    <button routerLink="/">Atrás</button>
+  </div>
+  
+  
+
+<h2 class="selectText">Selecciona tu continente:</h2>
+<select class="select" [(ngModel)]="selectedContinent">
+    @for (continent of continents; track $index) {<option> {{continent.name}}</option>
+    }
+    
+  </select>
+  
+
+  @if (selectedContinent) {
+
+  <div class="tarifas">
+    <div class="tarifasText"> </div>
+    <h1 class="nuestrasTarifas"><b>Nuestras tarifas fijas para {{ selectedContinent }}</b></h1>
+  
+
+      <div class="tarifa1">
+        <h4 class="timeText">24 horas</h4>
+        <h2 class="continentText">{{ getContinentPrice(selectedContinent) }}</h2>
+        <h4 class="luggageText">Por equipaje</h4>
+      </div>
+
+      <div class="tarifa2">
+        <h4 class="timeText">Día adicional</h4>
+        <h2 class="continentText">{{ getContinentPrice2(selectedContinent) }}</h2>
+        <h4 class="luggageText">Por equipaje</h4>
+      </div>
+    
+  </div>
+  
+  }
+ 
+</div>
+
+  

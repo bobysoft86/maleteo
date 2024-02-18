@@ -1,0 +1,22 @@
+
+
+<body class="body">
+@if(establecimiento){
+  <div>
+    <h2>{{ establecimiento.name }}</h2>
+    <img src={{establecimiento.img}} alt={{establecimiento.name}}>
+    <p>capacidad: {{establecimiento.capacity}}</p>
+    <p>localizacion: {{establecimiento.capacidad}}</p>
+    <div id="map"></div>
+
+    <p>tipo: {{ establecimiento.propertySpace}}</p>
+    @if(establecimiento.aviable===true){
+      <p>Disponible</p>
+    }
+    <!-- no me dejaba poner else, no se porque -->
+    @if(establecimiento.aviable===false){
+      <p>No disponible</p>
+    }
+  </div>
+}
+</body>

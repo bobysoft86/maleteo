@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+button {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #f68f23;
+    color:#FFEACE ;
+    width: 30%;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+   font-size: 10px;
+    cursor: pointer;
+    
+  } 
+  
+
+ 
+  li {font-size: small;}
+  
+
+  .chatText {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+    color: #976B47;
+   padding-left: 40px;
+   padding-right: 40px;
+  }
+
+  ul {
+    list-style-type: none;
+    
+  }
+
+  .bookingNum {
+    color:#976B47;
+    font-size: 10px;
+  }
+
+  .body {background-color:#FFEACE;
+    height: 100vh;
+margin: 0;
+padding: 0;
+  }

@@ -1,0 +1,112 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+.chat-container {
+   
+    border-radius: 5px;
+    padding: 50px;
+
+  
+  }
+  
+  .input-container {
+    margin-bottom: 10px;
+  }
+  
+  .username-input, .message-input {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  .username-input {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    background: rgb(250, 171, 29);}
+
+ .message-input {
+    background-color: #FFEACE;
+ }
+  
+  .messages-container {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .message-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .message-item {
+    margin-bottom: 10px;
+  }
+  
+  .message-username {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    color:#976B47
+  }
+  
+  .message-content {
+    margin-left: 20px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+
+  }
+  
+  .send-button {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #f68f23;
+    color: white;
+    width: 25%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4vh;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  
+
+  
+  .container {
+    padding:40px;
+  }
+
+
+ 
+
+  .message-content-green {background: rgb(0,82,71);
+    background: linear-gradient(90deg, rgba(0,82,71,0.7035407913165266) 0%, rgba(0,82,71,0.14331670168067223) 97%);
+    border-radius: 10px;
+padding: 10px;
+width: 60%;
+  }
+
+  .message-content-pastel {
+    background: rgb(241,208,173);
+    background: linear-gradient(90deg, rgba(241,208,173,0.09289653361344541) 0%, rgba(241,208,173,0.8463979341736695) 97%);
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+    text-align: right;
+  }
+
+
+  .chatText {
+   color: #976B47;
+   font-family: 'Catamaran', sans-serif;
+   font-size: 18px;
+  }
+
+  .bookingNum {font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    color: #005247;
+
+  }

@@ -1,0 +1,11 @@
+<h2>Lista de Establecimientos Registrados:</h2>
+<ul>
+    @for(establecimiento of establecimientos; track $index){
+        <li>
+            <div (click)="navigateToDetail(establecimiento._id)">
+                <h3>{{establecimiento.name}}</h3>
+                <img src={{establecimiento.img}} alt="{{establecimiento.name}}">
+            </div>
+        </li>
+    }
+</ul>

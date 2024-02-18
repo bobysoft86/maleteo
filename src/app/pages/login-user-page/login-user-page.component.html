@@ -1,0 +1,56 @@
+
+
+<body class="body">
+
+@if(showLoginForm){
+<div class="registerText">
+  <h2 class="iniciar">Iniciar Sesión</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <label for="userName">Username:</label>
+    <input type="text" id="userName" formControlName="name" />
+    <label for="password">Contraseña</label>
+    <input type="password" id="password" formControlName="password" />
+   <button type="submit" class="submitButton">Iniciar sesión</button> 
+    
+  </form>
+  <div class="registrate"><p> Si no tienes una cuenta, <button class="registerBtn"(click)="toggleForm()">registrate aquí</button></p></div>
+
+</div> 
+
+
+
+}
+@if(!showLoginForm){
+<div class="registerText">
+  <h2 class="iniciar">Registrarse</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <label for="email">Direccion de correo electronico:</label>
+    <input type="text" id="email" formControlName="email" />
+    <label for="userName">Username:</label>
+    <input type="text" id="userName" formControlName="userName" />
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" formControlName="name" />
+    <label for="surname">Apellidos:</label>
+    <input type="text" id="surname" formControlName="surname" />
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" formControlName="password" />
+    <label for="confirmPassword">Repetir contraseña:</label>
+    <input
+      type="password"
+      id="confirmPassword"
+      formControlName="confirmPassword"
+    />
+
+    <button type="submit" class="submitButton">Registrarse</button>
+  </form>
+</div>
+<div class="pulsa">
+  <p>¿Ya eres miembro? <button class="alreadyMember"(click)="toggleForm()">Pulsa aquí</button> </p>
+</div>
+
+
+}
+
+
+
+</body>

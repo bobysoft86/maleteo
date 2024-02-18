@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+form {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    border:none;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+   
+  input, select {
+    font-family: "Noto Sans", sans-serif;
+    width: 90%;
+    padding: 1em;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 12px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  input, select:focus {
+    outline: none;
+    border-color: #bd8200;
+    background-color: #fff1d4;
+  }
+
+  
+  button {
+    font-family: "Noto Sans", sans-serif;
+    background-color:#F68F23;
+    color: white;
+    width: 20vh;
+    padding: px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4vh;
+    cursor: pointer;
+  }
+
+h1{
+    margin-left: 2vh;
+    margin-top: 4vh;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+h3{
+    margin-left: 2vh;
+    margin-top: 4vh;
+    font-weight: bolder;
+}
+
+button:hover {
+  background-color: #D17100; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Experiencias-container, .exp2, .exp2, .novedades, .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    text-align: center;
+
+}
+
+.exp1, .exp2{
+    max-width: 60%;
+}
+
+.blog-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px;
+    text-align: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-weight: bold;
+    min-width: 100%;
+    
+}
+
+  
+.blogA{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("https://www.dondeir.com/wp-content/uploads/2021/04/mejores-lugares-para-viajar-en-mexico.jpg");
+    background-repeat: unset;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    flex-shrink: 0;
+
+}
+.blogB{
+    background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),  url("https://images.memphistours.com/large/30b8e4334ce5733c4357d030cc2effae.jpg");
+    background-repeat: unset;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+}
+.blogC{
+    background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),  url("https://dam.ngenespanol.com/wp-content/uploads/2020/11/perito-moreno-glaciar-argentina-national-geographic-2021.jpg");
+    background-repeat: unset;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+
+}
+.blogD{
+    background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),  url("https://aventurateaviajar.com/library/mod_noticias/images/lugares-viajar-navidad.jpg");
+    background-repeat: unset;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+
+}
+
+.novedades p{
+    margin: 10px;
+}
+
+
+

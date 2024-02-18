@@ -1,0 +1,52 @@
+<body class="body">
+
+<h2>Describenos tu espacio:</h2>
+<form [formGroup]="anuncioForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="name">Título de tu propiedad:</label>
+        <input type="text" id="name" formControlName="name">
+    </div>
+    <div>
+        <label for="propertyType">Tipo de propiedad:</label>
+        <select id="propertyType" formControlName="propertyType">
+            <option value="Casa">Casa</option>
+            <option value="Hotel">Hotel</option>
+            <option value="Establecimiento">Establecimiento</option>
+        </select>
+    </div>
+    <div>
+        <label for="propertySpace">Tipo de espacio:</label>
+        <select id="propertySpace" formControlName="propertySpace">
+            <option value="Habitación">Habitación</option>
+            <option value="Hall">Hall</option>
+            <option value="Trastero">Trastero</option>
+            <option value="Buhardilla">Buhardilla</option>
+            <option value="Garaje">Garaje</option>
+        </select>
+    </div>
+    <div id="map"></div>
+    <div>
+        <label for="latitude">Latitud de tu propiedad:</label>
+        <input type="number" id="latitude" formControlName="latitude">
+    </div>
+    <div>
+        <label for="longitude">Longitud de tu propiedad:</label>
+        <input type="number" id="longitude" formControlName="longitude">
+    </div>
+    <div>
+        <label for="img">Imagen de tu propiedad:</label>
+        <input type="text" id="img" formControlName="img">
+    </div>
+    <div>
+        <label for="capacity">Capacidad de tu propiedad:</label>
+        <input type="number" id="capacity" formControlName="capacity">
+    </div>
+    <div>
+        <label for="available">¿Disponible?</label>
+        <input type="checkbox" id="available" formControlName="available">
+    </div>
+    <button class="submitButton" type="submit">Registrar Propiedad</button>
+</form>
+
+</body>
+

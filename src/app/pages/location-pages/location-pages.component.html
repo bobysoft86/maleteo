@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="container">
+    <div>
+      <h1>Encuentra tu guardian</h1>
+    </div>
+    <div class="container">
+      <form [formGroup]="profileForm" (ngSubmit)="OnSearch()" action="/localizacion">
+        <label for="adressForm">¿Dónde te encuentras?</label>
+        <select formControlName="addressForm" placeholder="donde de encuentras" type="text" name="adressForm"
+          id="adressForm" value="">
+          <option>Barcelona</option>
+        </select>
+        <label for="dayPutForm">Día de entrada:</label>
+        <input formControlName="dayPutForm" placeholder="Deposito" type="date" name="dayPutForm" id="dayPutForm" />
+        <label for="dayOutForm">Día de salida:</label>
+        <input formControlName="dayOutForm" placeholder="Retirada" type="date" name="dayOutForm" id="dayOutForm" />
+        <label for="capacity">Número de bultos:</label>
+        <input formControlName="numObjectsForm" placeholder="1" type="number" id="capacity" />
+
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+    <section class="container">
+      <div class="novedades">
+        <h1>Novedades</h1>
+        <!-- Aquí los blogs deben hacer scroll -->
+        <div class="blog-container">
+          <div class="blogA">
+            <p class="blog1">
+              Nuevo artículo de nuestro viajero empedernido.
+            </p>
+            <a href="https://www.traveler.es/experiencias/articulos/30-rasgos-que-definen-al-viajero-empedernido/5699"><button
+                class="mostrarMas">Leer más</button></a>
+          </div>
+          <div class="blogB">
+            <p class="blog2">Los lugares más visitados en 2023.</p>
+            <a href="https://www.20minutos.es/viajes/destinos/cinco-paises-mas-visitados-mundo-2023-5164019/"><button
+                class="mostrarMas">Leer más</button></a>
+          </div>
+          <div class="blogC">
+            <p class="blog3">Cómo ahorrar para viajar por el mundo.</p>
+            <a href="https://n26.com/es-es/blog/como-ahorrar-para-un-viaje"><button class="mostrarMas">Leer
+                más</button></a>
+          </div>
+          <div class="blogD">
+            <p class="blog4">
+              Viajar con niños pequeños y sobrevivir a ello.
+            </p>
+            <a href="https://www.diezminutos.es/maternidad/ninos/g29018131/lugares-de-vacaciones-con-ninos-en-espana/"><button
+                class="mostrarMas">Leer más</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="Experiencias-container">
+        <h1>Experiencias</h1>
+        <img src="../../../assets/exp1.png" />
+        <div class="exp1">
+          <h3>Un pedacito de Italia en Gijón</h3>
+          <p>
+            Sin lugar a duda es uno de los destinos gastronómicos por
+            excelencia de esta gran ciudad situada en el norte de España.
+          </p>
+          <a href="https://es.hoteles.com/go/espana/cosas-que-hacer-gijon"><button
+              class="mostrarMas">Mostrar más</button></a>
+        </div>
+
+        <div class="exp2">
+          <img src="../../../assets/exp2.png" />
+          <h3>Sumérgete en Barcelona</h3>
+          <p>
+            Si estás dispuesto a aventurarte en el mundo del submarinismo y
+            venir a sentir una vivencia insólita en L’Aquàrium.
+          </p>
+          <a href="https://www.aquariumbcn.com/ca/"><button
+              class="mostrarMas">Mostrar más</button></a>
+        </div>
+      </div>
+    </section>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<div class="reservaConfirmada">
+  <h1 class="bookingsText"><b>Listado de reservas pendientes:</b></h1>
+  <img src="../../assets/fenix.png">
+  <ul>
+    @for(reserva of reservas; track $index){
+      @for(detail of reserva;track $index){
+
+        
+        <li>
+         <p class="reserva">Reserva: {{detail}}</p>
+         <button (click)="aceptarReserva(detail)">Aceptar</button>
+         <button (click)="eliminarReserva()">Eliminar</button>
+        </li>
+      }
+    }
+  </ul>
+</div>

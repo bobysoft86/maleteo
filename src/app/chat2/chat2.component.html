@@ -1,0 +1,30 @@
+<div class="container">
+<div >
+  <h1 class="chatText">Chat de tu reserva nº</h1>
+  <h6 class="bookingNum"> {{chat}}</h6>
+</div>
+
+  <div class="chat-container">
+    <div class="input-container">
+   
+      <input class="message-input" placeholder="Escribe aquí tu mensaje..." [(ngModel)]="message" (keydown.enter)="submit()" />
+    </div>
+    <div class="messages-container">
+      <ul class="message-list">
+        <li class="message-item" *ngFor="let msg of messages">
+          <div>
+             <h2 class="message-username">
+          {{ msg.username }}
+          </h2>
+          </div>
+         
+          <div class="message-content" [ngClass]="getMessageContentClass(msg.username)" >{{ msg.message }}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <button class="send-button" (click)="submit()">Enviar</button>
+</div>
+  <!-- <input class="form-control" placeholder="Write a message" [(ngModel)]="username"/> <input class="username-input" [(ngModel)]="username" disabled=""/>-->
+
+   

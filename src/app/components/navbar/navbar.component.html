@@ -1,0 +1,26 @@
+
+
+
+<div class="container">
+<nav class="navbar">
+    <ul>
+        <li routerLink="/">
+          <img class="icon" src="../../../assets/homeIcon.png">
+         </li>
+        <li class="icon" routerLink="ubicacion">
+          <img src="../../../assets/searchIcon.png">
+        </li>
+        <li class="icon" routerLink="/chatlist">
+          <img src="../../../assets/chatIcon.png"></li>
+        <li class="icon" routerLink="usuarios/:id">
+          <img src="../../../assets/userIcon.png">
+        </li>
+        @if(showBookingsValue){
+          <li routerLink="confirmada/reserva">
+            <img  class="icon" src="../../../assets/bookingIcon.png">
+          </li>
+        }
+    </ul>
+</nav>
+</div>
+
